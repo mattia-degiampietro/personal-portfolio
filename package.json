@@ -5,6 +5,7 @@
 	"type": "module",
 	"scripts": {
 		"dev": "vite dev",
+		"expose": "vite dev --host",
 		"build": "vite build",
 		"preview": "npm run build && wrangler pages dev build",
     	"deploy": "npm run build && wrangler pages deploy build --project-name personal-portfolio",
