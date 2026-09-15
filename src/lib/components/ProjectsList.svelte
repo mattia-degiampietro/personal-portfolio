@@ -1,0 +1,117 @@
+<script>
+	let { projects, complete } = $props();
+</script>
+
+{#if complete}
+    <section class="mx-auto max-w-[1440px] px-8 pb-24 md:px-12">
+        <div class="mt-10 flex flex-wrap gap-3 pb-16">
+            <button
+                class="text-foreground border-foreground border-b px-0 pb-0.5 font-sans text-[11px] tracking-[2px] uppercase transition-all duration-200"
+                >all
+            </button>
+            <button
+                class="hover:text-foreground border-b border-transparent px-0 pb-0.5 font-sans text-[11px] tracking-[2px] text-[#888780] uppercase transition-all duration-200 hover:border-[#888780]"
+                >web design
+            </button>
+            <button
+                class="hover:text-foreground border-b border-transparent px-0 pb-0.5 font-sans text-[11px] tracking-[2px] text-[#888780] uppercase transition-all duration-200 hover:border-[#888780]"
+                >branding
+            </button>
+            <button
+                class="hover:text-foreground border-b border-transparent px-0 pb-0.5 font-sans text-[11px] tracking-[2px] text-[#888780] uppercase transition-all duration-200 hover:border-[#888780]"
+                >product design
+            </button>
+            <button
+                class="hover:text-foreground border-b border-transparent px-0 pb-0.5 font-sans text-[11px] tracking-[2px] text-[#888780] uppercase transition-all duration-200 hover:border-[#888780]"
+                >app</button
+            >
+        </div>
+        <div>
+            {#each projects as project, i}
+                <a
+                    data-row="true"
+                    class="group border-border flex items-center justify-between border-t py-6 transition-colors duration-300 hover:border-[#D85A30]"
+                    href="/work/embedded-sensor-hub"
+                    style="opacity: 1; transform: translateY(0px); transition: opacity 0.6s, transform 0.6s;"
+                    ><div class="flex min-w-0 flex-1 items-baseline gap-6 md:gap-10">
+                        <span class="w-6 shrink-0 font-serif text-[12px] text-[#888780]">{i + 1}</span>
+                        <div class="min-w-0">
+                            <h2
+                                class="text-foreground truncate font-serif text-[clamp(22px,3.5vw,44px)] leading-tight font-light transition-colors duration-300 group-hover:text-[#D85A30]"
+                            >
+                                {project.title}
+                            </h2>
+                            <p class="mt-1 font-sans text-[12px] tracking-wide text-[#888780] md:hidden">
+                                embedded · C · 2025
+                            </p>
+                        </div>
+                    </div>
+                    <div class="ml-4 flex shrink-0 items-center gap-6">
+                        <span class="hidden font-sans text-[12px] tracking-wide text-[#888780] md:block"
+                            >embedded · C · 2025</span
+                        ><span
+                            class="text-lg text-[#888780] transition-all duration-200 group-hover:translate-x-1 group-hover:text-[#D85A30]"
+                            >→</span
+                        >
+                    </div>
+                </a>
+            {/each}
+            <div class="border-border border-t pb-24"></div>
+        </div>
+    </section>
+{:else}
+	<section class="mx-auto max-w-[1440px] px-8 pb-24 md:px-12">
+		<div
+			data-row="true"
+			class="border-border mb-8 flex items-center justify-between border-t pt-6"
+			style="opacity: 1; transform: translateY(0px); transition: opacity 0.6s, transform 0.6s;"
+		>
+			<span class="font-sans text-[11px] tracking-[3px] text-[#888780] uppercase"
+				>selected work / 2023–2025</span
+			>
+		</div>
+		<div>
+			{#each projects as project, i}
+				<a
+					data-row="true"
+					class="group border-border flex cursor-pointer items-center justify-between border-t py-5 transition-colors duration-300 hover:border-[#D85A30]"
+					href="/work/embedded-sensor-hub"
+					style="opacity: 1; transform: translateY(0px); transition: opacity 0.6s 80ms, transform 0.6s 80ms;"
+					><div class="flex min-w-0 flex-1 items-baseline gap-6 md:gap-10">
+						<span class="w-6 shrink-0 font-serif text-[12px] text-[#888780]">{i + 1}</span>
+						<h2
+							class="text-foreground truncate font-serif text-[clamp(20px,3.5vw,40px)] leading-tight font-light text-balance transition-colors duration-300 group-hover:text-[#D85A30]"
+						>
+							{project.title}
+						</h2>
+					</div>
+					<div class="ml-4 flex shrink-0 items-center gap-6">
+						<div
+							class="hidden flex-row gap-3 font-sans text-[12px] tracking-wide text-[#888780] md:flex"
+						>
+							{#each project.tags as tag}
+								<p>{tag}</p>
+							{/each}
+							<p>2025</p>
+						</div>
+						<span
+							class="text-lg text-[#888780] transition-all duration-200 group-hover:translate-x-1 group-hover:text-[#D85A30]"
+						>
+							→
+						</span>
+					</div>
+				</a>
+			{/each}
+			<div
+				data-row="true"
+				class="border-border border-t pt-8"
+				style="opacity: 1; transform: translateY(0px); transition: opacity 0.6s 400ms, transform 0.6s 400ms;"
+			>
+				<a
+					class="hover:text-foreground font-sans text-[13px] tracking-wide text-[#888780] transition-colors duration-200"
+					href="/work">view all work →</a
+				>
+			</div>
+		</div>
+	</section>
+{/if}
