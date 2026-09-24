@@ -1,60 +1,59 @@
 <script>
-	let { projects, complete } = $props();
+	let { projects, categories = [], complete } = $props();
+
+    let active_filter = $state("");
 </script>
 
 {#if complete}
     <section class="mx-auto max-w-[1440px] px-8 pb-24 md:px-12">
-        <div class="mt-10 flex flex-wrap gap-3 pb-16">
+        <div class="mt-10 flex flex-wrap gap-4 pb-16">
             <button
-                class="text-foreground border-foreground border-b px-0 pb-0.5 font-sans text-[11px] tracking-[2px] uppercase transition-all duration-200"
-                >all
-            </button>
-            <button
-                class="hover:text-foreground border-b border-transparent px-0 pb-0.5 font-sans text-[11px] tracking-[2px] text-[#888780] uppercase transition-all duration-200 hover:border-[#888780]"
-                >web design
-            </button>
-            <button
-                class="hover:text-foreground border-b border-transparent px-0 pb-0.5 font-sans text-[11px] tracking-[2px] text-[#888780] uppercase transition-all duration-200 hover:border-[#888780]"
-                >branding
-            </button>
-            <button
-                class="hover:text-foreground border-b border-transparent px-0 pb-0.5 font-sans text-[11px] tracking-[2px] text-[#888780] uppercase transition-all duration-200 hover:border-[#888780]"
-                >product design
-            </button>
-            <button
-                class="hover:text-foreground border-b border-transparent px-0 pb-0.5 font-sans text-[11px] tracking-[2px] text-[#888780] uppercase transition-all duration-200 hover:border-[#888780]"
-                >app</button
-            >
+                class="border-b pb-0.5 font-sans text-[11px] tracking-[2px] uppercase transition-all duration-200 {active_filter === '' 
+                    ? 'text-foreground border-foreground' 
+                    : 'text-[#888780] border-transparent hover:text-foreground hover:border-[#888780]'}"
+                onclick={() => { active_filter = "" }}
+            ><span class="-mr-[2px]">all</span></button>
+
+            {#each categories as cat}
+                <button
+                    class="border-b pb-0.5 font-sans text-[11px] tracking-[2px] uppercase transition-all duration-200 {active_filter === cat 
+                        ? 'text-foreground border-foreground' 
+                        : 'text-[#888780] border-transparent hover:text-foreground hover:border-[#888780]'}"
+                    onclick={() => { active_filter = cat }}
+                ><span class="-mr-[2px]">{cat}</span></button>   
+            {/each}
         </div>
         <div>
             {#each projects as project, i}
-                <a
-                    data-row="true"
-                    class="group border-border flex items-center justify-between border-t py-6 transition-colors duration-300 hover:border-[#D85A30]"
-                    href="/work/embedded-sensor-hub"
-                    style="opacity: 1; transform: translateY(0px); transition: opacity 0.6s, transform 0.6s;"
-                    ><div class="flex min-w-0 flex-1 items-baseline gap-6 md:gap-10">
-                        <span class="w-6 shrink-0 font-serif text-[12px] text-[#888780]">{i + 1}</span>
-                        <div class="min-w-0">
-                            <h2
-                                class="text-foreground truncate font-serif text-[clamp(22px,3.5vw,44px)] leading-tight font-light transition-colors duration-300 group-hover:text-[#D85A30]"
-                            >
-                                {project.title}
-                            </h2>
-                            <p class="mt-1 font-sans text-[12px] tracking-wide text-[#888780] md:hidden">
-                                embedded · C · 2025
-                            </p>
+                {#if project.tags.includes(active_filter) || active_filter == ""}
+                    <a
+                        data-row="true"
+                        class="group border-border flex items-center justify-between border-t py-6 transition-colors duration-300 hover:border-[#D85A30]"
+                        href="/work/embedded-sensor-hub"
+                        style="opacity: 1; transform: translateY(0px); transition: opacity 0.6s, transform 0.6s;"
+                        ><div class="flex min-w-0 flex-1 items-baseline gap-6 md:gap-10">
+                            <span class="w-6 shrink-0 font-serif text-[12px] text-[#888780]">{i + 1}</span>
+                            <div class="min-w-0">
+                                <h2
+                                    class="text-foreground truncate font-serif text-[clamp(22px,3.5vw,44px)] leading-tight font-light transition-colors duration-300 group-hover:text-[#D85A30]"
+                                >
+                                    {project.title}
+                                </h2>
+                                <p class="mt-1 font-sans text-[12px] tracking-wide text-[#888780] md:hidden">
+                                    embedded · C · 2025
+                                </p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="ml-4 flex shrink-0 items-center gap-6">
-                        <span class="hidden font-sans text-[12px] tracking-wide text-[#888780] md:block"
-                            >embedded · C · 2025</span
-                        ><span
-                            class="text-lg text-[#888780] transition-all duration-200 group-hover:translate-x-1 group-hover:text-[#D85A30]"
-                            >→</span
-                        >
-                    </div>
-                </a>
+                        <div class="ml-4 flex shrink-0 items-center gap-6">
+                            <span class="hidden font-sans text-[12px] tracking-wide text-[#888780] md:block"
+                                >embedded · C · 2025</span
+                            ><span
+                                class="text-lg text-[#888780] transition-all duration-200 group-hover:translate-x-1 group-hover:text-[#D85A30]"
+                                >→</span
+                            >
+                        </div>
+                    </a>
+                {/if}
             {/each}
             <div class="border-border border-t pb-24"></div>
         </div>

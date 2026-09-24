@@ -1,6 +1,4 @@
 <script lang="ts">
-	export const prerender = true;
-
 	import { onMount } from 'svelte';
 	import './layout.css';
 	import '../styles/global.css'

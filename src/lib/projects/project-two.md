@@ -2,7 +2,7 @@
 title: Another Great Project
 description: This is the second project on the list.
 date: 2026-07-15
-tags: [embedded, C]
+tags: [embedded, test]
 home: false
 ---
 

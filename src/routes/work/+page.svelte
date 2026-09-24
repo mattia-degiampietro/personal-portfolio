@@ -11,4 +11,4 @@
         </h1>
     </div>
 </section>
-<ProjectsList projects={data.projects} complete={true} />
+<ProjectsList projects={data.projects} categories={data.categories} complete={true} />
