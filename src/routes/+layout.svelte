@@ -4,6 +4,7 @@
 	import '../styles/global.css'
 	import favicon from '$lib/assets/favicon.svg';
 	import Navbar from '$lib/components/navbar.svelte';
+	import Footer from '$lib/components/Footer.svelte';
 
 	onMount(() => {
 		const match = document.cookie.match(new RegExp('(^| )theme=([^;]+)'));
@@ -19,3 +20,4 @@
 <div class="page-enter mt-[60px] pt-21 max-w-[1440px]">
     {@render children()}
 </div>
+<Footer />
