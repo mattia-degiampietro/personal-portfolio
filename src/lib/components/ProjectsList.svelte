@@ -29,7 +29,7 @@
                     <a
                         data-row="true"
                         class="group border-border flex items-center justify-between border-t py-6 transition-colors duration-300 hover:border-[#D85A30]"
-                        href="/work/embedded-sensor-hub"
+                        href={"/work/" + project.slug}
                         style="opacity: 1; transform: translateY(0px); transition: opacity 0.6s, transform 0.6s;"
                         ><div class="flex min-w-0 flex-1 items-baseline gap-6 md:gap-10">
                             <span class="w-6 shrink-0 font-serif text-[12px] text-[#888780]">{i + 1}</span>
@@ -39,15 +39,18 @@
                                 >
                                     {project.title}
                                 </h2>
-                                <p class="mt-1 font-sans text-[12px] tracking-wide text-[#888780] md:hidden">
-                                    embedded · C · 2025
-                                </p>
                             </div>
                         </div>
                         <div class="ml-4 flex shrink-0 items-center gap-6">
-                            <span class="hidden font-sans text-[12px] tracking-wide text-[#888780] md:block"
-                                >embedded · C · 2025</span
-                            ><span
+                            <div
+							class="hidden flex-row gap-3 font-sans text-[12px] tracking-wide text-[#888780] md:flex"
+						>
+							{#each project.tags as tag}
+								<p>{tag}</p>
+							{/each}
+							<p>2025</p>
+						</div>
+                            <span
                                 class="text-lg text-[#888780] transition-all duration-200 group-hover:translate-x-1 group-hover:text-[#D85A30]"
                                 >→</span
                             >
@@ -74,7 +77,7 @@
 				<a
 					data-row="true"
 					class="group border-border flex cursor-pointer items-center justify-between border-t py-5 transition-colors duration-300 hover:border-[#D85A30]"
-					href="/work/embedded-sensor-hub"
+					href={"/work/" + project.slug}
 					style="opacity: 1; transform: translateY(0px); transition: opacity 0.6s 80ms, transform 0.6s 80ms;"
 					><div class="flex min-w-0 flex-1 items-baseline gap-6 md:gap-10">
 						<span class="w-6 shrink-0 font-serif text-[12px] text-[#888780]">{i + 1}</span>
