@@ -15,12 +15,13 @@
 	<div class="max-w-5xl">
 		<div
 			data-reveal="true"
-			class="mb-8 font-sans text-[11px] tracking-[3px] text-[#D85A30] uppercase flex flex-row gap-5"
-			style="opacity: 1; transform: translateY(0px); transition: opacity 0.7s, transform 0.7s;">
-            {#each competenze_titoli as comp}
-                <p>{comp}</p>
-            {/each}
-        </div>
+			class="mb-8 flex flex-row gap-5 font-sans text-[11px] tracking-[3px] text-[#D85A30] uppercase"
+			style="opacity: 1; transform: translateY(0px); transition: opacity 0.7s, transform 0.7s;"
+		>
+			{#each competenze_titoli as comp}
+				<p>{comp}</p>
+			{/each}
+		</div>
 		<h1
 			data-reveal="true"
 			class="text-foreground font-serif text-[clamp(52px,8vw,112px)] leading-[1.05] font-light text-balance"
@@ -55,8 +56,8 @@
 				style="opacity: 1; transform: translateY(0px); transition: opacity 0.7s 480ms, transform 0.7s 480ms;"
 			>
 				<p class="font-sans text-[15px] leading-relaxed text-[#5F5E5A]">
-					C for microcontrollers and React for browsers. Databases, hardened systems, packet
-					analysis. The full stack — from bare metal to the browser.
+					I develop web platforms, design embedded systems, and manage Linux servers. Read more
+					about my background, what I like to build, and my latest projects.
 				</p>
 				<a
 					href="/about"

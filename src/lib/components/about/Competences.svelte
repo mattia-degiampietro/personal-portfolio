@@ -62,7 +62,7 @@
                     <p class="pt-0.5 font-serif text-[18px] leading-none text-[#D85A30]">0{i+1}</p>
                     <div>
                         <h2
-                            class="text-foreground font-serif text-[clamp(24px,3vw,36px)] leading-none font-light transition-colors duration-300 group-hover:text-[#D85A30]"
+                            class="text-foreground font-serif text-[clamp(24px,3vw,36px)] leading-none font-light transition-colors duration-300"
                         >
                             {competence.title}
                         </h2>

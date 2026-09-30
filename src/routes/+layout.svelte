@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
 	import './layout.css';
-	import '../styles/global.css'
+	import '../styles/global.css';
 	import favicon from '$lib/assets/favicon.svg';
 	import Navbar from '$lib/components/navbar.svelte';
 	import Footer from '$lib/components/Footer.svelte';

@@ -69,7 +69,7 @@
 			style="opacity: 1; transform: translateY(0px); transition: opacity 0.6s, transform 0.6s;"
 		>
 			<span class="font-sans text-[11px] tracking-[3px] text-[#888780] uppercase"
-				>selected work / 2023–2025</span
+				>selected work</span
 			>
 		</div>
 		<div>
