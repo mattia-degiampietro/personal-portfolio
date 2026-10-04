@@ -1,18 +1,19 @@
 <script>
-	const competenze_titoli = ['full-stack', 'embedded', 'security'];
+	const competenze_titoli = ['full-stack', 'embedded', 'servers'];
 
 	const competenze_complete = [
 		'Frontend & Backend Web',
 		'software',
-		'SQL & Databases',
-		'Networks',
 		'C / Embedded & Hardware',
-		'Cybersecurity'
+		'Networks',
+		'Cybersecurity',
+		'SQL & Databases',
+		'System Administration',
 	];
 </script>
 
 <section class="mx-auto px-8 pb-24 md:px-12">
-	<div class="max-w-5xl">
+	<div class="max-w-4xl">
 		<div
 			data-reveal="true"
 			class="mb-8 flex flex-row gap-5 font-sans text-[11px] tracking-[3px] text-[#D85A30] uppercase"
