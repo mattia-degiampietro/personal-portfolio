@@ -8,7 +8,7 @@
     <section class="mx-auto max-w-[1440px] px-8 pb-24 md:px-12">
         <div class="mt-10 flex flex-wrap gap-4 pb-16">
             <button
-                class="border-b pb-0.5 font-sans text-[11px] tracking-[2px] uppercase transition-all duration-200 {active_filter === '' 
+                class="border-b pb-0.5 font-sans text-[11px] lg:text-[13px] tracking-[2px] uppercase transition-all duration-200 {active_filter === '' 
                     ? 'text-foreground border-foreground' 
                     : 'text-[#888780] border-transparent hover:text-foreground hover:border-[#888780]'}"
                 onclick={() => { active_filter = "" }}
@@ -16,7 +16,7 @@
 
             {#each categories as cat}
                 <button
-                    class="border-b pb-0.5 font-sans text-[11px] tracking-[2px] uppercase transition-all duration-200 {active_filter === cat 
+                    class="border-b pb-0.5 font-sans text-[11px] lg:text-[13px] tracking-[2px] uppercase transition-all duration-200 {active_filter === cat 
                         ? 'text-foreground border-foreground' 
                         : 'text-[#888780] border-transparent hover:text-foreground hover:border-[#888780]'}"
                     onclick={() => { active_filter = cat }}
@@ -32,7 +32,7 @@
                         href={"/work/" + project.slug}
                         style="opacity: 1; transform: translateY(0px); transition: opacity 0.6s, transform 0.6s;"
                         ><div class="flex min-w-0 flex-1 items-baseline gap-6 md:gap-10">
-                            <span class="w-6 shrink-0 font-serif text-[12px] text-[#888780]">{i + 1}</span>
+                            <span class="w-6 shrink-0 font-serif text-[13px] lg:text-[15px] text-[#888780]">{i + 1}</span>
                             <div class="min-w-0">
                                 <h2
                                     class="text-foreground truncate font-serif text-[clamp(22px,3.5vw,44px)] leading-tight font-light transition-colors duration-300 group-hover:text-[#D85A30]"
@@ -43,7 +43,7 @@
                         </div>
                         <div class="ml-4 flex shrink-0 items-center gap-6">
                             <div
-							class="hidden flex-row gap-3 font-sans text-[12px] tracking-wide text-[#888780] md:flex"
+							class="hidden flex-row gap-3 font-sans text-[12px] lg:text-[13px] tracking-wide text-[#888780] md:flex"
 						>
 							{#each project.tags as tag}
 								<p>{tag}</p>
@@ -65,10 +65,10 @@
 	<section class="mx-auto max-w-[1440px] px-8 pb-24 md:px-12">
 		<div
 			data-row="true"
-			class="border-border mb-8 flex items-center justify-between border-t pt-6"
+			class="border-border mb-4 flex items-center justify-between border-t pt-8"
 			style="opacity: 1; transform: translateY(0px); transition: opacity 0.6s, transform 0.6s;"
 		>
-			<span class="font-sans text-[11px] tracking-[3px] text-[#888780] uppercase"
+			<span class="font-sans text-[11px] lg:text-[13px] tracking-[3px] text-[#888780] uppercase"
 				>selected work</span
 			>
 		</div>
@@ -80,7 +80,7 @@
 					href={"/work/" + project.slug}
 					style="opacity: 1; transform: translateY(0px); transition: opacity 0.6s 80ms, transform 0.6s 80ms;"
 					><div class="flex min-w-0 flex-1 items-baseline gap-6 md:gap-10">
-						<span class="w-6 shrink-0 font-serif text-[12px] text-[#888780]">{i + 1}</span>
+						<span class="w-6 shrink-0 font-serif text-[13px] lg:text-[15px] text-[#888780]">{i + 1}</span>
 						<h2
 							class="text-foreground truncate font-serif text-[clamp(20px,3.5vw,40px)] leading-tight font-light text-balance transition-colors duration-300 group-hover:text-[#D85A30]"
 						>
@@ -89,7 +89,7 @@
 					</div>
 					<div class="ml-4 flex shrink-0 items-center gap-6">
 						<div
-							class="hidden flex-row gap-3 font-sans text-[12px] tracking-wide text-[#888780] md:flex"
+							class="hidden flex-row gap-3 font-sans text-[12px] lg:text-[13px] tracking-wide text-[#888780] md:flex"
 						>
 							{#each project.tags as tag}
 								<p>{tag}</p>
@@ -110,7 +110,7 @@
 				style="opacity: 1; transform: translateY(0px); transition: opacity 0.6s 400ms, transform 0.6s 400ms;"
 			>
 				<a
-					class="hover:text-foreground font-sans text-[13px] tracking-wide text-[#888780] transition-colors duration-200"
+					class="hover:text-foreground font-sans text-[13px] lg:text-[14px] tracking-wide text-[#888780] transition-colors duration-200"
 					href="/work">view all work →</a
 				>
 			</div>

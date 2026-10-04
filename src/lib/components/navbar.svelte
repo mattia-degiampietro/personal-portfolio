@@ -52,7 +52,7 @@
 >
 	<div class="max-w-[1440px] mx-auto px-8 md:px-12 h-full flex items-center justify-between">
 		<a
-			class="font-serif text-base text-foreground tracking-wide hover:text-[#D85A30] transition-colors duration-200"
+			class="font-serif text-base text-foreground tracking-wide hover:text-[#D85A30] transition-colors duration-200 lg:text-[17px]"
 			onclick={() => {mobileMenu = false;}}
       		href="/"
 		>
@@ -61,7 +61,7 @@
 		<nav class="hidden md:flex items-center gap-8">
 			{#each navLinks as link}
 				<a
-					class="text-[13px] font-sans tracking-[1px] transition-colors duration-200 text-[#888780] hover:text-foreground"
+					class="text-[14px] font-sans tracking-[1px] transition-colors duration-200 text-[#888780] hover:text-foreground"
 					class:text-foreground={link.href === '/'
 						? page.url.pathname === '/'
 						: page.url.pathname.startsWith(link.href)}

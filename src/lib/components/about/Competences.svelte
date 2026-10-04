@@ -45,9 +45,9 @@
 			class="md:col-span-3"
 			style="opacity: 1; transform: translateY(0px); transition: opacity 0.65s 490ms, transform 0.65s 490ms;"
 		>
-			<p class="font-sans text-[11px] tracking-[2.5px] text-[#888780] uppercase">Competences</p>
+			<p class="font-sans text-[11px] lg:text-[13px] tracking-[2.5px] text-[#888780] uppercase">Competences</p>
 			<p
-				class="mt-5 max-w-[190px] font-sans text-[13px] leading-relaxed text-[var(--text-secondary)]"
+				class="mt-5 max-w-[190px] font-sans text-[13px] lg:text-[14px] lg:max-w-[250px] leading-relaxed text-[var(--text-secondary)]"
 			>
 				A working map of the systems, tools, and disciplines I move between.
 			</p>
@@ -67,7 +67,7 @@
                             {competence.title}
                         </h2>
                         <p
-                            class="mt-3 max-w-2xl font-sans text-[13px] leading-relaxed text-[var(--text-secondary)]"
+                            class="mt-3 max-w-2xl font-sans text-[13px] lg:text-[14px] leading-relaxed text-[var(--text-secondary)]"
                         >
                             {competence.content}
                         </p>
