@@ -17,7 +17,7 @@
 
 <svelte:head><link rel="icon" href={favicon} /></svelte:head>
 <Navbar />
-<div class="page-enter mt-[60px] pt-21 max-w-[1440px]">
+<div class="page-enter mt-[60px] pt-21 max-w-[1440px] mx-auto">
     {@render children()}
 </div>
 <Footer />
