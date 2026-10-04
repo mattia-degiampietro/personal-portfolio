@@ -1,7 +1,7 @@
 <div class="border-border border-b pb-24">
 		<p
 			data-reveal="true"
-			class="mb-8 font-sans text-[11px] tracking-[3px] text-[#D85A30] uppercase"
+			class="mb-8 font-sans text-[11px] lg:text-[13px] tracking-[3px] text-[#D85A30] uppercase"
 			style="opacity: 1; transform: translateY(0px); transition: opacity 0.65s, transform 0.65s;"
 		>
 			contact
@@ -15,7 +15,7 @@
 		</h1>
 		<p
 			data-reveal="true"
-			class="mt-8 max-w-md font-sans text-[15px] leading-relaxed text-[#5F5E5A]"
+			class="mt-8 max-w-md font-sans text-[15px] lg:text-[16px] lg:max-w-lg leading-relaxed text-[#5F5E5A]"
 			style="opacity: 1; transform: translateY(0px); transition: opacity 0.65s 200ms, transform 0.65s 200ms;"
 		>
 			If you have a question, want to discuss a topic, or simply want to get in touch — the contact

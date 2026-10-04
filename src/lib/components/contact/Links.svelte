@@ -69,7 +69,7 @@
 		data-reveal="true"
 		style="opacity: 1; transform: translateY(0px); transition: opacity 0.65s 300ms, transform 0.65s 300ms;"
 	>
-		<p class="mb-4 font-sans text-[11px] tracking-[2.5px] text-[#888780] uppercase">Email</p>
+		<p class="mb-4 font-sans text-[11px] lg:text-[13px] tracking-[2.5px] text-[#888780] uppercase">Email</p>
 		
 		<!-- 
 		  onclick automatically captures both touch/tap and standard clicks seamlessly.
@@ -84,7 +84,7 @@
 
 		<p
 			aria-live="polite"
-			class="mt-4 font-sans text-[12px] tracking-[2px] text-[#D85A30] uppercase opacity-0 transition-opacity duration-500"
+			class="mt-4 font-sans text-[12px] lg:text-[14px] tracking-[2px] text-[#D85A30] uppercase opacity-0 transition-opacity duration-500"
 			class:opacity-100={showBanner}
 		>
 			Mail address copied to clipboard
@@ -96,27 +96,27 @@
 		data-reveal="true"
 		style="opacity: 1; transform: translateY(0px); transition: opacity 0.65s 400ms, transform 0.65s 400ms;"
 	>
-		<p class="mb-4 font-sans text-[11px] tracking-[2.5px] text-[#888780] uppercase">Elsewhere</p>
+		<p class="mb-4 font-sans text-[11px] lg:text-[13px] tracking-[2.5px] text-[#888780] uppercase">Elsewhere</p>
 		<div class="flex flex-col gap-0">
 			<a
-				href="https://github.com"
+				href="https://github.com/mattia-degiampietro"
 				target="_blank"
 				rel="noopener noreferrer"
 				class="group border-border flex items-center justify-between border-b py-3 transition-colors duration-200 hover:border-[#D85A30]"
 				><span
-					class="text-foreground font-sans text-[15px] transition-colors duration-200 group-hover:text-[#D85A30]"
+					class="text-foreground font-sans text-[15px] lg:text-[16px] transition-colors duration-200 group-hover:text-[#D85A30]"
 					>GitHub</span
 				><span
 					class="text-[#888780] transition-all duration-200 group-hover:translate-x-1 group-hover:text-[#D85A30]"
 					>→</span
 				></a
 			><a
-				href="https://linkedin.com"
+				href="https://www.linkedin.com/in/mattia-degiampietro"
 				target="_blank"
 				rel="noopener noreferrer"
 				class="group border-border flex items-center justify-between border-b py-3 transition-colors duration-200 hover:border-[#D85A30]"
 				><span
-					class="text-foreground font-sans text-[15px] transition-colors duration-200 group-hover:text-[#D85A30]"
+					class="text-foreground font-sans text-[15px] lg:text-[16px] transition-colors duration-200 group-hover:text-[#D85A30]"
 					>LinkedIn</span
 				><span
 					class="text-[#888780] transition-all duration-200 group-hover:translate-x-1 group-hover:text-[#D85A30]"
@@ -128,7 +128,7 @@
 				rel="noopener noreferrer"
 				class="group border-border flex items-center justify-between border-b py-3 transition-colors duration-200 hover:border-[#D85A30]"
 				><span
-					class="text-foreground font-sans text-[15px] transition-colors duration-200 group-hover:text-[#D85A30]"
+					class="text-foreground font-sans text-[15px] lg:text-[16px] transition-colors duration-200 group-hover:text-[#D85A30]"
 					>Download CV</span
 				><span
 					class="text-[#888780] transition-all duration-200 group-hover:translate-x-1 group-hover:text-[#D85A30]"
