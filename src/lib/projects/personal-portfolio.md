@@ -4,10 +4,10 @@ description: The project behind the creation of this website you are browsing ri
 date: 2026-10-06
 tags: [web, design]
 stack: [Svelte Js, Tailwind, Figma]
-link_github: www.github.com
-link_project: www.project.com
-cover_img_light: /src/lib/assets/portfolio-mockup-light.png
-cover_img_dark: /src/lib/assets/portfolio-mockup-dark.png
+link_github: www.github.com/mattia-degiampietro/personal-portfolio
+link_project: www.mattiadegiampietro.com
+cover_img_light: /images/portfolio-mockup-light.png
+cover_img_dark: /images/portfolio-mockup-dark.png
 home: true
 ---
 <script>
