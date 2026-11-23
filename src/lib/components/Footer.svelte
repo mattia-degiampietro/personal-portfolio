@@ -67,7 +67,7 @@
 	<div
 		class="mx-auto flex max-w-[1440px] px-8 py-4 flex-col items-start justify-between gap-2 md:flex-row md:items-center"
 	>
-		<p class="font-sans text-[12px] lg:text-[13px] tracking-wide text-[#888780]">
+		<p class="font-sans text-[12px] lg:text-[13px] tracking-wide text-muted-foreground">
 			© <!-- -->2026<!-- --> Mattia Degiampietro. All rights reserved.
 		</p>
 	</div>

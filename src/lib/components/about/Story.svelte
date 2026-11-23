@@ -43,7 +43,7 @@
 	>
 		<div class="relative aspect-[3/4] overflow-hidden rounded-sm bg-[var(--card)]">
 			<!-- <div class="absolute inset-0 flex items-end p-6">
-				<p class="font-sans text-[11px] tracking-[2px] text-[#888780] uppercase">Italy — 2025</p>
+				<p class="font-sans text-[11px] tracking-[2px] text-muted-foreground uppercase">Italy — 2025</p>
 			</div> -->
 			<img src={currentTheme == "light" ? portrait_light : portrait_dark} alt="">
 		</div>
@@ -81,7 +81,7 @@
 			style="opacity: 1; transform: translateY(0px); transition: opacity 0.65s 420ms, transform 0.65s 420ms;"
 		>
 			<a
-				class="text-foreground border-foreground border-b pb-0.5 font-sans text-[13px] tracking-wide transition-colors duration-200 hover:border-[#D85A30] hover:text-[#D85A30]"
+				class="text-foreground border-foreground border-b pb-0.5 font-sans text-[13px] tracking-wide transition-colors duration-200 hover:border-[#D85A30] hover:text-accent"
 				href="/contact">Contact →</a
 			>
 		</div>

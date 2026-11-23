@@ -52,7 +52,7 @@
 >
 	<div class="max-w-[1440px] mx-auto px-8 md:px-12 h-full flex items-center justify-between">
 		<a
-			class="font-serif text-base text-foreground tracking-wide hover:text-[#D85A30] transition-colors duration-200 lg:text-[17px]"
+			class="font-serif text-base text-foreground tracking-wide hover:text-accent transition-colors duration-200 lg:text-[17px]"
 			onclick={() => {mobileMenu = false;}}
       		href="/"
 		>
@@ -61,7 +61,7 @@
 		<nav class="hidden md:flex items-center gap-8">
 			{#each navLinks as link}
 				<a
-					class="text-[14px] font-sans tracking-[1px] transition-colors duration-200 text-[#888780] hover:text-foreground"
+					class="text-[14px] font-sans tracking-[1px] transition-colors duration-200 text-muted-foreground hover:text-foreground"
 					class:text-foreground={link.href === '/'
 						? page.url.pathname === '/'
 						: page.url.pathname.startsWith(link.href)}
@@ -74,7 +74,7 @@
 			<button
 				aria-label="Cycle theme"
 				onclick={toggleTheme}
-				class="flex items-center gap-1.5 text-[11px] uppercase tracking-[2px] font-sans text-[#888780] hover:text-foreground transition-colors duration-200 border border-border rounded-sm px-2.5 py-1"
+				class="flex items-center gap-1.5 text-[11px] uppercase tracking-[2px] font-sans text-muted-foreground hover:text-foreground transition-colors duration-200 border border-border rounded-sm px-2.5 py-1"
 			>
 				<span class="w-2.5 h-2.5 rounded-full border border-border transition-colors duration-300">
 				</span>
@@ -93,7 +93,7 @@
 	<nav class="flex flex-col gap-8">
     {#each navLinks as link}
 		<a
-			class="font-serif text-5xl font-light text-foreground hover:text-[#D85A30] opacity-100 translate-y-0 transition-all duration-500"
+			class="font-serif text-5xl font-light text-foreground hover:text-accent opacity-100 translate-y-0 transition-all duration-500"
 			style="transition-delay: 0ms;"
       onclick={toggleMenu}
 			href={link.href}>
@@ -106,7 +106,7 @@
 			onclick={toggleTheme}
 			id="themeToggle2"
 			aria-label="Cycle theme"
-			class="self-start flex items-center gap-2 text-[11px] uppercase tracking-[2px] font-sans text-[#888780] hover:text-foreground transition-colors duration-200 border border-border rounded-sm px-3 py-1.5"
+			class="self-start flex items-center gap-2 text-[11px] uppercase tracking-[2px] font-sans text-muted-foreground hover:text-foreground transition-colors duration-200 border border-border rounded-sm px-3 py-1.5"
 		>
 			<span class="w-2.5 h-2.5 rounded-full border border-border navbar-theme-btn-circle"> </span>
 			<p>{theme} theme</p>
