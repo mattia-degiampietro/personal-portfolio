@@ -1,7 +1,7 @@
 <script>
 	import { onMount } from 'svelte';
-	import portrait_dark from '$lib/assets/portrait_dark.jpg'
-	import portrait_light from '$lib/assets/portrait_light.jpg'
+	import portrait_dark from '/static/images/portrait_dark.jpg';
+	import portrait_light from '/static/images/portrait_light.jpg';
 
 	// 1. Definiamo uno stato reattivo per memorizzare il tema corrente
 	let currentTheme = $state('light');
@@ -45,7 +45,7 @@
 			<!-- <div class="absolute inset-0 flex items-end p-6">
 				<p class="font-sans text-[11px] tracking-[2px] text-muted-foreground uppercase">Italy — 2025</p>
 			</div> -->
-			<img src={currentTheme == "light" ? portrait_light : portrait_dark} alt="">
+			<img src={currentTheme == 'light' ? portrait_light : portrait_dark} alt="" />
 		</div>
 	</div>
 	<div class="flex flex-col justify-center gap-6 md:col-span-7 md:col-start-6">
@@ -81,7 +81,7 @@
 			style="opacity: 1; transform: translateY(0px); transition: opacity 0.65s 420ms, transform 0.65s 420ms;"
 		>
 			<a
-				class="text-foreground border-foreground border-b pb-0.5 font-sans text-[13px] tracking-wide transition-colors duration-200 hover:border-[#D85A30] hover:text-accent"
+				class="text-foreground border-foreground hover:text-accent border-b pb-0.5 font-sans text-[13px] tracking-wide transition-colors duration-200 hover:border-[#D85A30]"
 				href="/contact">Contact →</a
 			>
 		</div>
